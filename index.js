@@ -1,8 +1,8 @@
-module.export = {
+module.exports = {
   parser: 'babel-eslint',
-  extends: ['airbnb'].map(require.resolve),
+  extends: 'airbnb',
   plugins: [
-    'import'
+    'import',
   ],
   rules: {
     'no-underscore-dangle': 'off',
@@ -13,22 +13,29 @@ module.export = {
         code: 100,
         ignoreStrings: true,
         ignoreComments: true,
-        ignoreUrls: true
-      }
+        ignoreUrls: true,
+      },
     ],
-    'import/prefer-default-export': ['off']
+    'import/prefer-default-export': ['off'],
   },
   settings: {
     'import/resolver': {
       node: {
         extensions: [
-          '.js'
-        ]
-      }
-    }
+          '.js',
+        ],
+      },
+    },
+  },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: { experimentalObjectRestSpread: true },
   },
   env: {
-    jest: true
-  }
+    jest: true,
+    es6: true,
+    node: true,
+    browser: true,
+  },
 };
-
