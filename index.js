@@ -16,7 +16,6 @@ module.exports = {
         ignoreUrls: true,
       },
     ],
-    'import/prefer-default-export': ['off'],
   },
   settings: {
     'import/resolver': {
