@@ -23,6 +23,8 @@ module.exports = {
       node: {
         extensions: [
           '.js',
+          '.android.js',
+          '.ios.js',
         ],
       },
     },
