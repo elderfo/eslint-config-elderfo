@@ -16,6 +16,7 @@ module.exports = {
         ignoreUrls: true,
       },
     ],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
   settings: {
     'import/resolver': {
