@@ -21,3 +21,4 @@ Extend `elderfo` in your `.eslintrc` file:
 | --- | --- | --- |
 | `no-underscore-dangle` | off | Simply a preference of mine |
 | `max-len` | error | Has the following rules applied: </br> `ignoreTrailingComments: true`</br>`code: 100`</br>`ignoreStrings: true`</br>`ignoreComments: true`</br>`ignoreUrls: true` |
+| `react/jsx-filename-extension` | error | Except for extensions: <br />`.js`<br /> `.jsx` |
