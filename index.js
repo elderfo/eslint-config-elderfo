@@ -14,6 +14,8 @@ module.exports = {
         ignoreStrings: true,
         ignoreComments: true,
         ignoreUrls: true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true,
       },
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
