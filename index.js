@@ -1,9 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
   rules: {
     'no-underscore-dangle': 'off',
     'max-len': [
@@ -19,15 +17,26 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
+      },
+    ],
+    'arrow-parens': ['error', 'as-needed'],
+    'import/prefer-default-export': ['off'],
+    'react/jsx-wrap-multilines': ['off'],
+    'class-methods-use-this': ['off'],
+    'no-mixed-operators': ['error', { allowSamePrecedence: true }],
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: [
-          '.js',
-          '.android.js',
-          '.ios.js',
-        ],
+        extensions: ['.js', '.android.js', '.ios.js'],
       },
     },
   },
