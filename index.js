@@ -32,6 +32,35 @@ module.exports = {
     'react/jsx-wrap-multilines': ['off'],
     'class-methods-use-this': ['off'],
     'no-mixed-operators': ['error', { allowSamePrecedence: true }],
+    'react/sort-comp': [
+      'error',
+      {
+        order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
+        groups: {
+          lifecycle: [
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'defaultProps',
+            'state',
+            'mixins',
+            'statics',
+            'constructor',
+            'getDefaultProps',
+            'getInitialState',
+            'getChildContext',
+            'componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'componentDidUpdate',
+            'componentWillUnmount',
+          ],
+        },
+      },
+    ],
   },
   settings: {
     'import/resolver': {
