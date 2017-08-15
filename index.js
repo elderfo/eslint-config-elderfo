@@ -1,9 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
   rules: {
     'no-underscore-dangle': 'off',
     'max-len': [
@@ -19,15 +17,12 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-indent-props': 'off',
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: [
-          '.js',
-          '.android.js',
-          '.ios.js',
-        ],
+        extensions: ['.js', '.android.js', '.ios.js'],
       },
     },
   },
