@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "esw ./",
+    "lint": "eslint ./",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
@@ -13,14 +13,13 @@
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.1.0",
-    "eslint-watch": "^3.1.2"
+    "eslint-plugin-react": "^7.1.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/elderfo/eslint-config-elderfo.git"
   },
   "devDependencies": {
-    "semantic-release": "^6.3.2"
+    "semantic-release": "^6.3.6"
   }
 }
