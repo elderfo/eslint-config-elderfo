@@ -35,13 +35,19 @@ module.exports = {
     'react/sort-comp': [
       'error',
       {
-        order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
+        order: [
+          'type-annotations',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render',
+        ],
         groups: {
           lifecycle: [
             'displayName',
-            'propTypes',
             'contextTypes',
             'childContextTypes',
+            'propTypes',
             'defaultProps',
             'state',
             'mixins',
