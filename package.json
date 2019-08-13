@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "lint": "eslint ./"
   },
   "dependencies": {
     "babel-eslint": "^10.0.2",
